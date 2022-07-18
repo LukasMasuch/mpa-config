@@ -22,6 +22,7 @@ def function_example():
     )
 
 
+st.write("before")
 
 show = st.checkbox("Show page two")
 
@@ -43,3 +44,5 @@ if show:
     st.page("example_two.py", icon="⭐")
 
 st.page(function_example, icon="🌊")
+
+st.write("after")
