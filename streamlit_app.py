@@ -21,13 +21,15 @@ def function_example():
         """
     )
 
-import time
 
-time.sleep(1)
 
 show = st.checkbox("Show page two")
 
 st.page("example_one.py", name="Home!", icon="🍔")
+
+import time
+
+time.sleep(10)
 
 st.page("example_four.py", icon="🦊")
 
