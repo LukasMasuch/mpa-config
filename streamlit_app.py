@@ -21,6 +21,11 @@ def function_example():
         """
     )
 
+import time
+
+time.sleep(1)
+
+show = st.checkbox("Show page two")
 
 st.page("example_one.py", name="Home!", icon="🍔")
 
@@ -28,6 +33,11 @@ st.page("example_four.py", icon="🦊")
 
 st.page("example_three.py", name="Custom name!", icon="🔥")
 
-st.page("example_two.py", icon="⭐")
+
+time.sleep(1)
+
+
+if show:
+    st.page("example_two.py", icon="⭐")
 
 st.page(function_example, icon="🌊")
